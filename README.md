@@ -144,8 +144,8 @@
   
 <br> 
 
-#### Developer
-- [kokojop](https://kokojop.blogspot.com)
+#### Contributors
+- [kokojop](https://github.com/kokojop/XFFF/graphs/contributors)
 
 <br>
 
