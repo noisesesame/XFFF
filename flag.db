@@ -1,0 +1,96 @@
+{
+
+"qdfsD9arJyKt43arffUHLtHSeQ83R2dtnHqb":{
+"chn":"web1",
+"pt":"200",
+"msg":"WEB CHALLENGE 1"
+},
+
+"KaRykPJHNGTJwZcBXf3BjujxzBsqv65tn5pR":{
+"chn":"web2",
+"pt":"1800",
+"msg":"WEB CHALLENGE 2"
+},
+
+"g4JzzdhnU8gVj3pLH2F4ZspAMG6ZnP3N7N4k":{
+"chn":"web3",
+"pt":"2000",
+"msg":"WEB CHALLENGE 3"
+},
+
+"S8uT75VY5UBA8AHfn9MWCuUyVWu3MMvkuhKw":{
+"chn":"web4",
+"pt":"200",
+"msg":"WEB CHALLENGE 4"
+},
+
+"sk82VU2jdEnpCxa86z4ryT4HYQYHJs9VKEp9":{
+"chn":"web5",
+"pt":"100",
+"msg":"WEB CHALLENGE 5"
+},
+
+"WHfMeYp2n7wMJhEu6PkNkAsg2NWv8kwfPvDz":{
+"chn":"web6",
+"pt":"1800",
+"msg":"WEB CHALLENGE 6"
+},
+
+"3xkFLEoIovHRDln1UdlWmQPpFQhunD":{
+"chn":"rev1",
+"pt":"200",
+"msg":"REVERSING CHALLENGE 1"
+},
+
+"diRc4STctioSntnfbnnreaFxFtftrut":{
+"chn":"rev2",
+"pt":"1800",
+"msg":"REVERSING CHALLENGE 2"
+},
+
+"6DXncKgERN7BYhNeA5Fpy7GVXxmha":{
+"chn":"rev3",
+"pt":"1000",
+"msg":"REVERSING CHALLENGE 3"
+},
+
+"fLCivyfzoipTyTEikehkUJnE4lbnzhH76zLvLPP":{
+"chn":"for1",
+"pt":"300",
+"msg":"FORENSICS CHALLENGE 1"
+},
+
+"0jLZOXEagqAyZ2HpgmNZBl81MzFHpHhbN9Qklfi":{
+"chn":"for2",
+"pt":"1000",
+"msg":"FORENSICS CHALLENGE 2"
+},
+
+"KeJ1NfgzJPcfNbjn4VXD1qicBZQa8pabeUHFow2":{
+"chn":"for3",
+"pt":"800",
+"msg":"FORENSICS CHALLENGE 3"
+},
+
+"8zQiHy9dU9tHDNCOgBiPe16bs79Ty0cTkTemfdZ":{
+"chn":"for4",
+"pt":"100",
+"msg":"FORENSICS CHALLENGE 4"
+},
+
+"AaLuq8UZjiWXs1p2dSXCmu8j20bt5fEBbeiQxyw":{
+"chn":"for5",
+"pt":"1100",
+"msg":"FORENSICS CHALLENGE 5"
+},
+
+
+"E2Y7Gl42dmCL9coRT1Rhr5LEA2oBT2sC4AVoUw9":{
+"chn":"sys1",
+"pt":"800",
+"msg":"SYSTEM CHALLENGE 1"
+}
+
+
+}
+
