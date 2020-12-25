@@ -20,23 +20,23 @@ while 1:
 
 		c, addr = s.accept()
 
-		rsp_200 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.7\r\n\r\n'''
+		rsp_200 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.1.0\r\n\r\n'''
 
 		# login error
-		rsp_200_2 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.7\r\n\r\n'''
+		rsp_200_2 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.1.0\r\n\r\n'''
 
-		rsp_zip = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytes\r\nServer: XFFF/2.7\r\n\r\n'''
+		rsp_zip = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytes\r\nServer: XFFF/2.1.0\r\n\r\n'''
 
-		rsp_logout = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.7\r\n'''
+		rsp_logout = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.1.0\r\n'''
 
-		rsp_web_1 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.7\r\n'''
+		rsp_web_1 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nServer: XFFF/2.1.0\r\n'''
 
 		rsp_web_3 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\n'''
 
 		web_6_base64 = "VFZOM2QwMUVRWE5OUkVGM1RFUkJkMDFCUFQwPQ=="
-		rsp_web_6 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nSecurity_XFFF: ''' + web_6_base64 + '''\r\nServer: XFFF/2.7\r\n\r\n'''
+		rsp_web_6 = '''HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nSecurity_XFFF: ''' + web_6_base64 + '''\r\nServer: XFFF/2.1.0\r\n\r\n'''
 		
-		rsp_rev = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytesServer: XFFF/2.7\r\n\r\n'''
+		rsp_rev = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytesServer: XFFF/2.1.0\r\n\r\n'''
 
 		main_db = "Your IP"
 
