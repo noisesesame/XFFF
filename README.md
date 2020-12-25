@@ -144,6 +144,11 @@
   
 <br> 
 
+#### Thanks to
+@deepraj1729
+
+<br>
+
 #### Contributors
 - [kokojop](https://github.com/kokojop/XFFF/graphs/contributors)
 
