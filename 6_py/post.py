@@ -26,7 +26,7 @@ while 1:
 		# \r\n one
                 rsp_ses = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.7\r\n'''
 
-		main = "3.3.3.3"
+		main = "Your IP"
 
                 location_href_login = "http://" + main + "/login"
 
