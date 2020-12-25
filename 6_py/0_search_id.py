@@ -3,13 +3,13 @@
 from ast import literal_eval
 import sys
 
-f = open("info_id.db","r")
+f = open("../2_db/info_id.db","r")
 
 info_id = f.read()
 
 f.close()
 
-f = open("id.db","r")
+f = open("../2_db/id.db","r")
 
 id_db = f.read()
 

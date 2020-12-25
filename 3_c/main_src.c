@@ -22,8 +22,8 @@ main(){
 
 		system("pkill -9 python");
 
-        	system("python d.py &");
-	        system("python o.py &");
+        	system("python '../6_py/get.py' &");
+	        system("python '../6_py/post.py' &");
 
 		sleep(10);
 

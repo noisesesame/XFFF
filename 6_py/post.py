@@ -26,7 +26,7 @@ while 1:
 		# \r\n one
                 rsp_ses = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.7\r\n'''
 
-		main = "Your IP"
+		main = "3.3.3.3"
 
                 location_href_login = "http://" + main + "/login"
 
@@ -62,7 +62,7 @@ while 1:
                                 pw = data_44[1]
 
                                 ### id_db ###
-                                f = open("id.db","r")
+                                f = open("../2_db/id.db","r")
 
                                 id_db_pre = f.read()
 
@@ -81,7 +81,7 @@ while 1:
 
                 	                        #print pw
 
-	                                        f = open("session.db","r")
+	                                        f = open("../2_db/session.db","r")
 
         	                                ses_db = f.read()
 
@@ -93,7 +93,7 @@ while 1:
 
                                         	ses_db[id] = session.hex
 
-	                                        f = open("session.db","w")
+	                                        f = open("../2_db/session.db","w")
 
         	                                f.write(str(ses_db))
 
@@ -123,7 +123,7 @@ while 1:
 
                         elif data_1[1][:4] == "flag":
 				
-				f = open("session.db","r")
+				f = open("../2_db/session.db","r")
 
                                 ses_db = f.read()
 
@@ -168,7 +168,7 @@ while 1:
 								### flag_db[flag][chn] == info_id[id]
 
         	                			        ### flag_db ###
-				                                f = open("flag.db","r")
+				                                f = open("../2_db/flag.db","r")
 	
                 	        			        flag_db = f.read()
 
@@ -176,7 +176,7 @@ while 1:
 
 
 
-								f = open("info_id.db","r")
+								f = open("../2_db/info_id.db","r")
 								info_id = f.read()
 
 								f.close()
@@ -223,7 +223,7 @@ while 1:
 
 											info_id[id]["pt"] = str(id_point)
 
-											f = open("info_id.db","w")
+											f = open("../2_db/info_id.db","w")
 
 											f.write(str(info_id))
 

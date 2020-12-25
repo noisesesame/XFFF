@@ -71,16 +71,16 @@ for i in range(0, int(dd)+1):
 	
 
 
-q = open("info_id.db","w")
+q = open("../2_db/info_id.db","w")
 q.write(str(d))
 q.close()
 
 
-q = open("id.db","w")
+q = open("../2_db/id.db","w")
 q.write(str(f))
 q.close()
 
-q = open("session.db","w")
+q = open("../2_db/session.db","w")
 q.write("{}")
 q.close()
 

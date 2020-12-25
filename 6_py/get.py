@@ -38,7 +38,7 @@ while 1:
 		
 		rsp_rev = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytesServer: XFFF/2.7\r\n\r\n'''
 
-		main_db = "Your IP"
+		main_db = "3.3.3.3"
 
 		location_href_login = "http://" + main_db + "/login"
 		location_auth_db = "http://" + main_db + ":8080"
@@ -58,7 +58,7 @@ while 1:
 			if data_2[1] == " HTTP":
 
 
-				f = open("index.html","r")
+				f = open("../5_web/index.html","r")
 
 				rsp_200 += f.read()
 
@@ -74,7 +74,7 @@ while 1:
 			elif data_2[1] == "about HTTP":
 
 
-				f = open("about.html","r")
+				f = open("../5_web/about.html","r")
 
 				rsp_200 += f.read()
 
@@ -87,7 +87,7 @@ while 1:
 			### LOGIN ###
 			elif data_2[1] == "login HTTP":
 
-				f = open("session.db","r")
+				f = open("../2_db/session.db","r")
 
 				ses_db = f.read()
 
@@ -114,7 +114,7 @@ while 1:
 						## [FOR_3]
 						if cok == "E2Y7Gl42dmCL9coRT1Rhr5LEA2oBT2sC4AVoUw9":
 
-							f = open("login_p.html","r")
+							f = open("../5_web/login_p.html","r")
 
 							rsp_200 += f.read()
 
@@ -140,13 +140,13 @@ while 1:
 								id = rev_ses_db[cok]
 								id = str(id)
 		
-								f = open("login_p.html","r")
+								f = open("../5_web/login_p.html","r")
 	
 								rsp_200 += f.read()
 
 								f.close()
 
-								f = open("info_id.db","r")
+								f = open("../2_db/info_id.db","r")
 
 								info_id = f.read()
 								info_id = literal_eval(info_id)
@@ -300,7 +300,7 @@ while 1:
 
 						except:
 
-							f = open("login_main_p.html","r")
+							f = open("../5_web/login_main_p.html","r")
 	
 							rsp_200_2 += f.read()
 
@@ -324,7 +324,7 @@ while 1:
 
 
 
-				f = open("login_main_p.html","r")
+				f = open("../5_web/login_main_p.html","r")
 
 				rsp_200_2 += f.read()
 
@@ -348,7 +348,7 @@ while 1:
 			### log_out ###
 			elif data_2[1] == "logout HTTP":
 
-				f = open("session.db","r")
+				f = open("../2_db/session.db","r")
 
 				ses_db = f.read()
 
@@ -395,7 +395,7 @@ while 1:
 
 								ses_db = {v: k for k, v in rev_ses_db.items()}
 	
-								f = open("session.db","w")
+								f = open("../2_db/session.db","w")
 
 								f.write(str(ses_db))
 
@@ -432,7 +432,7 @@ while 1:
 			### auth ###
 			elif data_2[1] == "auth HTTP":
 
-				f = open("auth_p.html","r")
+				f = open("../5_web/auth_p.html","r")
 				rsp_200 += f.read()
 				f.close()
 
@@ -458,7 +458,7 @@ while 1:
 			elif data_2[1] == "challenge HTTP":
 
 
-				f = open("challenge.html","r")
+				f = open("../5_web/challenge.html","r")
 
 				rsp_200 += f.read()
 
@@ -474,7 +474,7 @@ while 1:
 
 			elif data_2[1] == "web_1 HTTP":
 
-				f = open("web_1.html","r")
+				f = open("../5_web/web_1.html","r")
 
 				rsp_200 += f.read()
 
@@ -501,7 +501,7 @@ while 1:
 
 			elif data_2[1] == "web_2 HTTP":
 	
-                                f = open("web_2.html","r")
+                                f = open("../5_web/web_2.html","r")
 
                                 rsp_200 += f.read()
 
@@ -528,7 +528,7 @@ while 1:
 
 			elif data_2[1] == "web_3 HTTP":
 	
-                                f = open("web_3.html","r")
+                                f = open("../5_web/web_3.html","r")
 
                                 rsp_200 += f.read()
 
@@ -555,7 +555,7 @@ while 1:
 
 			elif data_2[1] == "web_4.php HTTP":
 	
-                                f = open("web_4.html","r")
+                                f = open("../5_web/web_4.html","r")
 
                                 rsp_200 += f.read()
 
@@ -567,7 +567,7 @@ while 1:
 
 			elif data_2[1] == "web_4.txt HTTP":
 
-				f = open("web_4.txt.html","r")
+				f = open("../5_web/web_4.txt.html","r")
 
 				rsp_200 += f.read()
 
@@ -582,7 +582,7 @@ while 1:
 
 			elif data_2[1] == "web_5 HTTP":
 	
-                                f = open("web_5.html","r")
+                                f = open("../5_web/web_5.html","r")
 
                                 rsp_200 += f.read()
 
@@ -594,7 +594,7 @@ while 1:
 
 			elif data_2[1] == "web_5?check_flag=Give_me_the_flag HTTP":
 	
-                                f = open("web_5_p.html","r")
+                                f = open("../5_web/web_5_p.html","r")
 
                                 rsp_200 += f.read()
 
@@ -625,7 +625,7 @@ while 1:
 
 						if do_web_6_v2 == "VFZOM2QwMUVRWE5OUkVGM1RFUkJkMDFCUFQwPQ==":
 
-							f = open("web_6_p.html","r")
+							f = open("../5_web/web_6_p.html","r")
 
 							rsp_web_6 += f.read()
 
@@ -640,7 +640,7 @@ while 1:
 						
 						else:
 
-							f = open("web_6_p.html","r")
+							f = open("../5_web/web_6_p.html","r")
 	
         	                                        rsp_web_6 += f.read()
 
@@ -657,7 +657,7 @@ while 1:
 
 						pass
 
-				f = open("web_6_p.html","r")
+				f = open("../5_web/web_6_p.html","r")
 	
         	                rsp_web_6 += f.read()
          	                f.close()
@@ -675,7 +675,7 @@ while 1:
 
 			elif data_2[1] == "rev_1 HTTP":
 
-				f = open("rev_1.html","r")
+				f = open("../5_web/rev_1.html","r")
 
 				rsp_200 += f.read()
 
@@ -687,7 +687,7 @@ while 1:
 
 			elif data_2[1] == "rev_1.zip HTTP":
 
-				f = open("rev_1.zip","r")
+				f = open("../5_web/rev_1.zip","r")
 
 				rsp_zip += f.read()
 
@@ -702,7 +702,7 @@ while 1:
 
 			elif data_2[1] == "rev_2 HTTP":
 
-				f = open("rev_2.html","r")
+				f = open("../5_web/rev_2.html","r")
 
 				rsp_200 += f.read()
 
@@ -715,7 +715,7 @@ while 1:
 			
 			elif data_2[1] == "rev_2.zip HTTP":
 
-				f = open("rev_2.zip","r")
+				f = open("../5_web/rev_2.zip","r")
 
 				rsp_zip += f.read()
 
@@ -730,7 +730,7 @@ while 1:
 
 			elif data_2[1] == "rev_3 HTTP":
 
-				f = open("rev_3.html","r")
+				f = open("../5_web/rev_3.html","r")
 
 				rsp_200 += f.read()
 
@@ -743,7 +743,7 @@ while 1:
 			
 			elif data_2[1] == "rev_3.zip HTTP":
 
-				f = open("rev_3.zip","r")
+				f = open("../5_web/rev_3.zip","r")
 
 				rsp_zip += f.read()
 
@@ -759,7 +759,7 @@ while 1:
 
 			elif data_2[1] == "for_1 HTTP":
 
-				f = open("for_1.html","r")
+				f = open("../5_web/for_1.html","r")
 
 				rsp_200 += f.read()
 
@@ -772,7 +772,7 @@ while 1:
 			
 			elif data_2[1] == "for_1.zip HTTP":
 
-				f = open("for_1.zip","r")
+				f = open("../5_web/for_1.zip","r")
 
 				rsp_zip += f.read()
 
@@ -787,7 +787,7 @@ while 1:
 
 			elif data_2[1] == "for_2 HTTP":
 
-				f = open("for_2.html","r")
+				f = open("../5_web/for_2.html","r")
 
 				rsp_200 += f.read()
 
@@ -800,7 +800,7 @@ while 1:
 			
 			elif data_2[1] == "for_2.zip HTTP":
 
-				f = open("for_2.zip","r")
+				f = open("../5_web/for_2.zip","r")
 
 				rsp_zip += f.read()
 
@@ -818,7 +818,7 @@ while 1:
 		
 			elif data_2[1] == "for_3 HTTP":
 
-				f = open("for_3.html","r")
+				f = open("../5_web/for_3.html","r")
 
 				rsp_200 += f.read()
 
@@ -831,7 +831,7 @@ while 1:
 			
 			elif data_2[1] == "for_3.zip HTTP":
 
-				f = open("for_3.zip","r")
+				f = open("../5_web/for_3.zip","r")
 
 				rsp_zip += f.read()
 
@@ -846,7 +846,7 @@ while 1:
 
 			elif data_2[1] == "for_4 HTTP":
 
-				f = open("for_4.html","r")
+				f = open("../5_web/for_4.html","r")
 
 				rsp_200 += f.read()
 
@@ -859,7 +859,7 @@ while 1:
 			
 			elif data_2[1] == "for_4.zip HTTP":
 
-				f = open("for_4.zip","r")
+				f = open("../5_web/for_4.zip","r")
 
 				rsp_zip += f.read()
 
@@ -874,7 +874,7 @@ while 1:
 
 			elif data_2[1] == "for_5 HTTP":
 
-				f = open("for_5.html","r")
+				f = open("../5_web/for_5.html","r")
 
 				rsp_200 += f.read()
 
@@ -887,7 +887,7 @@ while 1:
 			
 			elif data_2[1] == "for_5.zip HTTP":
 
-				f = open("for_5.zip","r")
+				f = open("../5_web/for_5.zip","r")
 
 				rsp_zip += f.read()
 
@@ -907,7 +907,7 @@ while 1:
 
 			elif data_2[1] == "sys_1 HTTP":
 	
-                                f = open("sys_1_p.html","r")
+                                f = open("../5_web/sys_1_p.html","r")
 
                                 rsp_200 += f.read()
 
@@ -925,7 +925,7 @@ while 1:
 
 			elif data_2[1] == "?cmd=ifconfig HTTP":
 	
-                                f = open("sys_1_p.html","r")
+                                f = open("../5_web/sys_1_p.html","r")
 
                                 rsp_200 += f.read()
 
@@ -950,7 +950,7 @@ while 1:
 
 			elif data_2[1] == "?cmd=ifconfig ; ls HTTP":
 	
-                                f = open("sys_1_p.html","r")
+                                f = open("../5_web/sys_1_p.html","r")
 
                                 rsp_200 += f.read()
 
@@ -981,7 +981,7 @@ while 1:
 
 			elif data_2[1] == "?cmd=ifconfig ; cat private_flag.txt HTTP":
 	
-                                f = open("sys_1_p.html","r")
+                                f = open("../5_web/sys_1_p.html","r")
 
                                 rsp_200 += f.read()
 
@@ -1013,7 +1013,7 @@ while 1:
 
 			else:
 
-				f = open("index.html","r")
+				f = open("../5_web/index.html","r")
 
 				rsp_200 += f.read()
 
