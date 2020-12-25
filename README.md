@@ -91,10 +91,10 @@
 <br>
 
 - DB
-  - [falg.db](https://github.com/kokojop/XFFF/blob/main/2_db/flag.db) [ Challenge name, score, and message ]
-  - [id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_id.db) [ ID and PW for each user ]
-  - [session.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_session.db) [ Session keys for each user ]
-  - [info_id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_info_id.db) [ DB for each user's score and solved challenge ]
+  - [./2_db/falg.db](https://github.com/kokojop/XFFF/blob/main/2_db/flag.db) [ Challenge name, score, and message ]
+  - [./2_db/id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_id.db) [ ID and PW for each user ]
+  - [./2_db/session.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_session.db) [ Session keys for each user ]
+  - [./2_db/info_id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_info_id.db) [ DB for each user's score and solved challenge ]
     
 <br>  
 
