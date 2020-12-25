@@ -109,7 +109,7 @@
       <pre><code># tcpdump -i [ Your network interface name ] port 80 or 8080 -G 300 -w ./7_pcap/log_%Y-%m-%d_%H_%M_%S.pcap -Z root &
       </pre></code>    
   - CREATE DB
-    - <pre><code># cd ./6_py && python 1_create_user_db.py && cd -
+    - <pre><code># cd ./6_py && python 1_create_user_db.py ; cd -
       </pre></code>
       - Enter the number of users after executing the command.
       - And Check the changed "./2_db/id.db" and "./2_db/info_id.db"
@@ -129,7 +129,7 @@
     <pre><code># ./1_main_start.sh
     </code></pre>
   - Information search about users
-    <pre><code># cd ./6_py && python 0_search_id.py [user00] && cd -
+    <pre><code># cd ./6_py && python 0_search_id.py [user00] ; cd -
     </code></pre>
     - Ex) ./6_py/3_search_id.py user0
     
