@@ -1,6 +1,6 @@
 <br>
 
-# XFFF
+# [XFFF v2.1.0](https://github.com/kokojop/XFFF/releases/tag/v2.1.0)
 
 <br>
 
