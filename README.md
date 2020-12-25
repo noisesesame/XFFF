@@ -23,7 +23,7 @@
 <br>
 
 - Simple environment configuration
-  - CentOS_7 ( [CentOS-7-x86_64-DVD-2003.iso](https://drive.google.com/file/d/16czjHJz6QzHU8On2Z0uVGcFkgmFeXk4n/view?usp=sharing) ) , Python_2.7
+  - - CentOS_7 ( [CentOS-7-x86_64-DVD-2003.iso](https://drive.google.com/file/d/16czjHJz6QzHU8On2Z0uVGcFkgmFeXk4n/view?usp=sharing) ) , Python_2.7 
     - All Python modules used in XFFF are python(CentOS) basic built-in modules.
   
 <br>
@@ -46,7 +46,7 @@
 <br>
 
 #### Program configuration diagram
-![ctf](https://github.com/kokojop/XFFF/blob/main/ctf_2.png)
+![ctf](https://github.com/kokojop/XFFF/blob/main/4_media/ctf_2.png)
 
 <br>
 
@@ -64,24 +64,24 @@
      
 <br>
 
-- 3_search_id.py
+- ./6_py/0_search_id.py
   - A program that can check the password of that user, the current score, and the problem that you have solved.       
      
 <br>     
      
-- 6_create_user_db.py
+- ./6_py/1_create_user_db.py
   - Create no-sql only DB   
      
 <br>
 
-- d.py
+- ./6_py/get.py
   - Handling HTTP GET REQUEST
   - Use the 80 [ TCP ]
   - Check the cookie value
   
 <br>
 
-- o.py
+- ./6_py/post.py
   - Handling HTTP POST REQUEST
   - Use the 8080 [ TCP ] 
   - Login and random cookie create
@@ -91,35 +91,35 @@
 <br>
 
 - DB
-  - [falg.db](https://github.com/kokojop/XFFF/blob/main/flag.db) [ Challenge name, score, and message ]
-  - [id.db](https://github.com/kokojop/XFFF/blob/main/PRE_id.db) [ ID and PW for each user ]
-  - [session.db](https://github.com/kokojop/XFFF/blob/main/PRE_session.db) [ Session keys for each user ]
-  - [info_id.db](https://github.com/kokojop/XFFF/blob/main/PRE_info_id.db) [ DB for each user's score and solved challenge ]
+  - [falg.db](https://github.com/kokojop/XFFF/blob/main/2_db/flag.db) [ Challenge name, score, and message ]
+  - [id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_id.db) [ ID and PW for each user ]
+  - [session.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_session.db) [ Session keys for each user ]
+  - [info_id.db](https://github.com/kokojop/XFFF/blob/main/2_db/PRE_info_id.db) [ DB for each user's score and solved challenge ]
     
 <br>  
 
 #### How to run the XFFF
-- Pre run ( [Guide video](https://drive.google.com/file/d/1DL7uS4lfViOBinQiZMOAkDUAndzBYMmp/view?usp=sharing) )
+- Pre run
   - First
-    <pre><code># chmod 755 0_main_stop.sh 1_main_start.sh 3_search_id.py main_src
-    # chmod 644 6_create_user_db.py
+    <pre><code># chmod 755 0_main_stop.sh 1_main_start.sh ./6_py/0_search_id.py ./3_c/main_src
+    # chmod 644 ./6_py/1_create_user_db.py
     </code></pre> 
   - Change network interface
     - 1_main_start.sh
-      <pre><code># tcpdump -i [ Your network interface name ] port 80 or 8080 -G 300 -w z_log_%Y-%m-%d_%H:%M:%S.pcap -Z root &
+      <pre><code># tcpdump -i [ Your network interface name ] port 80 or 8080 -G 300 -w ./7_pcap/log_%Y-%m-%d_%H_%M_%S.pcap -Z root &
       </pre></code>    
   - CREATE DB
-    - <pre><code># python 6_create_user_db.py
+    - <pre><code># python ./6_py/1_create_user_db.py
       </pre></code>
       - Enter the number of users after executing the command.
-      - And Check the changed "id.db" and "info_id.db"
+      - And Check the changed "./2_db/id.db" and "./2_db/info_id.db"
     
     <br>
     
   - EDIT IP ADDR
-    - d.py [ ( 41 Line ) ](https://github.com/kokojop/XFFF/blob/main/d.py#L41)
+    - ./6_py/get.py [ ( 41 Line ) ](https://github.com/kokojop/XFFF/blob/main/6_py/get.py#L41)
     <pre><code>main_db = "Your IP"  # ex) main_db = "192.168.100.100" </pre></code>
-    - o.py [ ( 29 Line ) ](https://github.com/kokojop/XFFF/blob/main/o.py#L29)
+    - ./6_py/post.py [ ( 29 Line ) ](https://github.com/kokojop/XFFF/blob/main/6_py/post.py#L29)
     <pre><code>main = "Your IP"  # ex) main = "192.168.100.100" </pre></code>
 
 <br>
@@ -129,11 +129,11 @@
     <pre><code># ./1_main_start.sh
     </code></pre>
   - Information search about users
-    <pre><code># ./3_search_id.py [user00]
+    <pre><code># ./6_py/0_search_id.py [user00]
     </code></pre>
-    - Ex) ./3_search_id.py user0
+    - Ex) ./6_py/3_search_id.py user0
     
-      ![search_id](https://github.com/kokojop/XFFF/blob/main/search_id.png)
+      ![search_id](https://github.com/kokojop/XFFF/blob/main/4_media/search_id.png)
   
 <br> 
 
@@ -150,7 +150,7 @@
 <br>
 
 #### Project period
-- 2020.10 ~ 2020.11
+- 2020.10 ~ 2020.12
 
 <br>
 
@@ -160,7 +160,7 @@
 <br>  
 
 #### XFFF Challenge solving Guide
-- [Link](https://github.com/kokojop/XFFF/blob/main/challenge_solving_guide.md)
+- [Link](https://github.com/kokojop/XFFF/blob/main/8_guide/challenge_solving_guide.md)
 
 <br>  
 
