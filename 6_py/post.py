@@ -21,10 +21,10 @@ while 1:
                 c, addr = s.accept()
 
 		# \r\n\r\n
-                rsp_200 = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.7\r\n\r\n'''
+                rsp_200 = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.1.0\r\n\r\n'''
 
 		# \r\n one
-                rsp_ses = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.7\r\n'''
+                rsp_ses = '''HTTP/1.1 200 OK\r\n\Content-Type: text/html; charset=utf-8\r\n\Server: XFFF/2.1.0\r\n'''
 
 		main = "Your IP"
 
