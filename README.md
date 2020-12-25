@@ -46,7 +46,7 @@
 <br>
 
 #### Program configuration diagram
-![ctf](https://github.com/kokojop/XFFF/blob/main/4_media/ctf_2.png)
+![ctf](https://github.com/kokojop/XFFF/blob/main/4_media/ctf2.png)
 
 <br>
 
