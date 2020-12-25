@@ -1,7 +1,12 @@
 ## Improvements and Error Correction
-#### No ( First releases )
+- Issues ( [#1](https://github.com/kokojop/XFFF/issues/1) )
+
+<br>
+
+## Thanks to
+@deepraj1729
 
 <br>
 
 ## Contributors
-#### kokojop
+@kokojop
