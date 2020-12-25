@@ -145,7 +145,7 @@
 <br> 
 
 #### Thanks to
-@deepraj1729
+- [Deepraj](https://github.com/deepraj1729)
 
 <br>
 
