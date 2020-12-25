@@ -38,7 +38,7 @@ while 1:
 		
 		rsp_rev = '''HTTP/1.1 200 OK\r\nContent-Type: application/x-zip-compressed\r\nAccept-Ranges: bytesServer: XFFF/2.7\r\n\r\n'''
 
-		main_db = "3.3.3.3"
+		main_db = "Your IP"
 
 		location_href_login = "http://" + main_db + "/login"
 		location_auth_db = "http://" + main_db + ":8080"
