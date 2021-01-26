@@ -3,6 +3,7 @@
 #main_menu {
   text-align: center;
 }
+
 .menu ul li {
   text-align: center;
   display: inline-block;
@@ -18,20 +19,29 @@
   border-right: 3px solid rgb(128, 255, 128);
 }
 
-.test_list ul li {
+.test_list ul li{
   display: inline-block;
-  padding: 20px 30px 30px 30px;
-  font-size: 20px;
+  padding: 30px 30px 30px 30px;
+  font-size: 24px;
   font-weight: bolder;
-
-}
-pre{
-  margin:0px;
 }
 
-ul{
-  padding-left : 0px;
+.About_link {
+  margin-top: 100px;
 }
+
+.questions {
+  text-align: center;
+}
+
+pre {
+  margin: 0px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
 body {
   background-color: black;
   color: rgb(128, 255, 128);
@@ -40,4 +50,23 @@ body {
 a {
   color: rgb(128, 255, 128);
   text-decoration: none;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(128, 255, 128);
+}
+
+button {
+  height: 28px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(128, 255, 128);
+}
+
+iframe{
+  padding-top: 50px;
 }
